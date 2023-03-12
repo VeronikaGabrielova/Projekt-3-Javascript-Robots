@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1100px;
+  background: rgb(215, 38, 56);
+  background: linear-gradient(
+    328deg,
+    rgba(215, 38, 56, 1) 0%,
+    rgba(94, 35, 157, 1) 100%
+  );
+  font-family: "Special Elite", cursive;
+  font-size: 18px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.heading {
+  margin-top: 100px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      rgba(225, 255, 255, 0.5) 20%,
+      rgba(255, 255, 255, 0) 61%
+    ),
+    linear-gradient(rgb(49, 243, 117) 52%, rgb(226, 137, 189) 60%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.card {
+  flex: calc(100% / 3);
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 350px;
+  transition: 1.5s;
+  line-height: 30px;
+  list-style: none;
+  box-shadow: -1px 3px 9px 4px rgba(29, 30, 24, 0.29);
+}
+.card:hover {
+  box-shadow: -1px 3px 9px 4px rgba(80, 255, 177, 1);
+  cursor: pointer;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 60px auto 0 auto;
+  height: 40px;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 30px;
+  outline: none;
+  color: #1d1e18;
+}
+input[type="text"] {
+  font-family: "Special Elite", cursive;
+}
+.input:hover {
+  border: 2px solid rgba(80, 255, 177, 1);
+}
+.user-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+
+  color: orange;
+}
+.link:hover,
+link:focus {
+  color: #50ffb1;
+}
+
+@media screen and (max-width: 1089px) {
+  body {
+    padding: 20px;
+  }
+  .cards {
+    justify-content: center;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .card {
+    min-width: 300px;
+  }
+}
