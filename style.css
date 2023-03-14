@@ -16,6 +16,7 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: orange;
 }
 .heading {
   margin-top: 100px;
@@ -28,7 +29,7 @@ body {
       rgba(225, 255, 255, 0.5) 20%,
       rgba(255, 255, 255, 0) 61%
     ),
-    linear-gradient(rgb(49, 243, 117) 52%, rgb(226, 137, 189) 60%);
+    linear-gradient(rgb(49, 243, 117) 52%, rgb(238, 102, 4) 60%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
